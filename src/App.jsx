@@ -9,7 +9,7 @@ const App = () => {
   const [contact, setContact] = useState("");
   const handleRegistration = (event) => {
     event.preventDefault();
-    const userDetails={
+    const userDetails = {
       firstName,
       lastName,
       email,
@@ -19,12 +19,19 @@ const App = () => {
     setFirstName("");
     setLastName("");
     setEmail("");
-    setPassword(""); 
+    setPassword("");
     setContact("");
     console.log(userDetails);
   };
   return (
     <>
+      <p className={styles.displayDetails}>
+        {`Hello, my name is `} <span className={styles.details}> {`${firstName} ${lastName}`}</span>
+        {`. My email address is `}
+        <span className={styles.details}>{`${email} `}</span>
+        {`and my phone number is `}
+        <span className={styles.details}>{`${contact}.`}</span>
+      </p>
       <form onSubmit={handleRegistration}>
         <div className={styles.container}>
           <div className={styles.innerContainer}>
