@@ -1,0 +1,47 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    letter-spacing: 2px;
+}
+.innerContainer{
+    align-items:center ;
+    justify-content:center ;
+    width: 25%;
+    box-shadow: rgba(128, 128, 128, 0.87) 2px 4px 10px 5px;
+    padding: 1.5rem 1.5rem;
+
+}
+
+.heading{
+    margin: 0;
+    padding: 0;
+    letter-spacing: 3px;
+}
+.description{
+    letter-spacing: 1px;
+    font-size: medium;
+}
+input{
+    display: block;
+    margin-bottom: 1rem;
+    margin-top: .4rem;
+    width: 97%;
+    padding: .4rem .2rem;
+    letter-spacing: 3px;
+}
+.submitButton{
+    width: 100%;
+    padding: .5rem 0;
+    border-radius: 5px;
+    background-color: rgb(33, 33, 146);
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size:medium;
+    letter-spacing: 3px;
+}
+.submitButton:hover{
+    background-color: rgb(42, 42, 139);
+}
