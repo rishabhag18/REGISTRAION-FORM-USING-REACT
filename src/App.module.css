@@ -30,6 +30,11 @@ input{
     width: 97%;
     padding: .4rem .2rem;
     letter-spacing: 3px;
+    border: none;
+    background-color: rgb(224, 224, 223);
+}
+input:focus{
+    outline: none;
 }
 .submitButton{
     width: 100%;
